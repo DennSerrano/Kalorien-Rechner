@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien Rechner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <main>
+        <form action="rechner">
+            <h1>Kalorien Rechner</h1>
+            <div>
+                <label for="größe">Körpergröße</label>
+                <input type="text" name="größe" id="größe">
+            </div>
+            <div>
+                <label for="age">Alter</label>
+                <input type="text" name="age" id="age">
+            </div>
+            <div>
+                <label for="kg">Gewicht</label>
+                <input type="text" name="kg" id="kg">
+            </div>
+            <div>
+                <label for="geschlecht">Körperbau</label>
+                <input type="radio" name="geschlecht" id="w">
+                <label for="geschlecht">Weiblich</label>
+                <input type="radio" name="geschlecht" id="m">
+                <label for="geschlecht">Männlich</label>
+            </div>
+            <div>
+                <label for="aktivität">Arbeits- und Freizeitaktivität</label>
+                <select name="aktivität" id="aktiv">
+                    <option value="schlaf">Schlafen</option>
+                    <option value="sitz">Nur Sitzen oder Liegen</option>
+                    <option value="wenig">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
+                        in
+                        der Freizeit, z.B. Büroarbeit</option>
+                    <option value="mehr">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                        Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="viel">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                        Handwerker,
+                        Mechaniker, Hausfrauen</option>
+                    <option value="sehrViel">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+            </div>
+            <input type="button" value="Check" onclick="check()">
+
+        </form>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
